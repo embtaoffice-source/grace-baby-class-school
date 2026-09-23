@@ -140,17 +140,12 @@ h3 { font-size: 1.3rem; font-weight: 700; }
   gap: 0.6rem;
   text-decoration: none;
 }
-.brand-badge {
-  width: 44px; height: 44px;
-  display: grid; place-items: center;
-  background: var(--coral);
-  color: #fff;
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 1.4rem;
-  border-radius: 14px 14px 14px 4px;
-  box-shadow: 0 6px 14px rgba(255, 123, 107, 0.35);
-  transform: rotate(-4deg);
+.brand-logo {
+  width: 46px; height: 46px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(27, 42, 107, 0.22);
 }
 .brand-text { font-family: var(--font-head); font-weight: 700; font-size: 1.25rem; color: var(--ink); }
 .brand-text em { font-style: normal; color: var(--teal-dark); }
@@ -348,6 +343,18 @@ h3 { font-size: 1.3rem; font-weight: 700; }
   border-radius: 18px 18px 18px 4px;
   box-shadow: var(--shadow-md);
   transform: rotate(3deg);
+}
+
+.about-seal {
+  position: absolute;
+  top: -26px; left: -16px;
+  width: 108px; height: 108px;
+  padding: 5px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+  transform: rotate(-8deg);
+  z-index: 2;
 }
 
 .check-list { list-style: none; margin: 0.4rem 0 1.4rem; }
@@ -746,8 +753,8 @@ h3 { font-size: 1.3rem; font-weight: 700; }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--ink);
-  color: #e9d9d2;
+  background: #1B2A6B;
+  color: #dfe4f5;
   padding-top: 4rem;
 }
 .footer-grid {
@@ -756,9 +763,10 @@ h3 { font-size: 1.3rem; font-weight: 700; }
   gap: 2.5rem;
   padding-bottom: 3rem;
 }
+.site-footer .brand-logo { width: 54px; height: 54px; }
 .site-footer .brand-text { color: #fff; }
 .site-footer .brand-text em { color: var(--yellow); }
-.footer-brand p { margin-top: 1rem; font-size: 0.95rem; color: #cbb3aa; max-width: 300px; }
+.footer-brand p { margin-top: 1rem; font-size: 0.95rem; color: #aab4dd; max-width: 300px; }
 .footer-col h4 {
   color: #fff;
   font-size: 1.1rem;
@@ -766,20 +774,20 @@ h3 { font-size: 1.3rem; font-weight: 700; }
 }
 .footer-col a {
   display: block;
-  color: #e9d9d2;
+  color: #dfe4f5;
   text-decoration: none;
   font-size: 0.95rem;
   margin-bottom: 0.55rem;
   transition: color 0.18s ease, transform 0.18s ease;
 }
 .footer-col a:hover { color: var(--yellow); transform: translateX(4px); }
-.footer-col p { font-size: 0.95rem; margin-bottom: 0.7rem; color: #cbb3aa; }
+.footer-col p { font-size: 0.95rem; margin-bottom: 0.7rem; color: #aab4dd; }
 .footer-bar {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
   padding: 1.3rem 0;
   text-align: center;
   font-size: 0.9rem;
-  color: #b99c92;
+  color: #93a0cf;
 }
 
 /* ---------- Back to top ---------- */
@@ -877,5 +885,6 @@ h3 { font-size: 1.3rem; font-weight: 700; }
   .enquiry-card { padding: 1.8rem 1.4rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .sticker { right: 0; bottom: -16px; font-size: 0.85rem; }
+  .about-seal { left: 2px; top: -18px; width: 84px; height: 84px; }
   .float-card { padding: 0.6rem 0.85rem; font-size: 0.8rem; }
 }
